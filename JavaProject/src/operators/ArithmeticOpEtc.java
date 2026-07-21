@@ -22,6 +22,20 @@ public class ArithmeticOpEtc {
 		System.out.println(n1 / n2);
 		System.out.println(n1 % n2);
 		
+		// 결과값 산출 시 오버플로우 주의 (에러가 안뜨고 가비지 값이 출력됨) <- 더 위험
+		int x = 1000000;
+		int y = 1000000;
+		
+		int z = x * y;
+		System.out.println(z); // -727379968 출력. int의 처리 최대값 넘어감
+		
+		//System.out.println(10/0); // by zero 1이것도 잘못된 런타임 오류인데 컴파일 시점엔 오류로 안잡힘
+		//System.out.println(10/0.0); // Infinity
+		
+		//System.out.println(10%0); // by zero 2이것도 잘못된 런타임 오류인데 컴파일 시점엔 오류로 안잡힘
+		//System.out.println(10%0.0); // NaN
+		System.out.println(10+20+"30"); // 산술 > 결합 3030 문자열이 있으면 문자열 결합
+		System.out.println("30"+20+10); // 결합 > 산술 302010
 	}
 
 }
