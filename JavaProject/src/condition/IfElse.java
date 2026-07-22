@@ -49,6 +49,22 @@ public class IfElse {
 			grade = 'F';
 		
 		System.out.print("성적 : " + grade);
+		
+		//중첩 IF : 기능이 아닌 코드 구조
+		
+		
+		score = sc.nextInt();
+		String grade1;
+		if (score >= 90) {
+			if (score >= 95) grade1 = "A+";
+			else grade = 'A';
+		} else {
+			if (score >= 85) grade1 = "B+";
+			else grade = 'B';
+		}
+		
+	
+		
 		sc.close();
 	}
 	
