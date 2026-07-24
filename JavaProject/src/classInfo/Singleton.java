@@ -1,0 +1,14 @@
+package classInfo;
+
+public class Singleton {
+	// Singleton 클래스의 객체 인스턴스를 1개만 생성되어 공유되도록 코딩
+	private static Singleton singleton = new Singleton();
+	
+	private Singleton() {}; // private이라 외부에선 사용 불가
+	
+	static Singleton getInstance() { // 인스턴스 없이 사용해서 인스턴스 참조주소를 반환받아야 하므로 static으로 생성
+		// static 메소드 이므로 static 필드만 사용 가능
+		return singleton; //객체 생성 후 리턴이 아닌고 프로그램 시작시 생성된 인스턴스의 주소를 반환
+		// 리턴하는 변수가 static 이므로 프로그램 시작시 생성 후 저장된 주소, getInstance()를 호출마다 동일한 주소 반환됨
+	}
+}
