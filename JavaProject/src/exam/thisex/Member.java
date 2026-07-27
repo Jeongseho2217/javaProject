@@ -1,0 +1,32 @@
+package exam.thisex;
+
+public class Member {
+
+	//멤버 필드
+	//접근 제한자(생략 가능) 데이터 타입 변수명;
+	String id;
+	String name;
+	int age;
+	String hp;
+	String address;
+	
+	// 클래스 생성자 함수
+	// this 래퍼런스 현재 객체를 의미 - this 참조변수는 인스턴스 별로 독립적으로 생성
+	public Member(String id, String name, int age, String hp, String address) {
+		this.id = id;
+		this.name = name;
+		this.age = age;
+		this.hp = hp;
+		this.address = address;
+	}
+	
+	// 멤버메서드
+	public void showMember() {
+		System.out.println("-------------회원 정보 출력-------------");
+		System.out.println("ID : " + id);
+		System.out.println("성명 : " + name);
+		System.out.println("나이 : " + age);
+		System.out.println("전화 : " + hp);
+		System.out.println("주소 : " + address);
+	}
+}
