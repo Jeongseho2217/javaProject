@@ -40,5 +40,8 @@ public class A { // 바깥 클래스
 			int field1;
 			void method1() {} // static 필드, 메소드 불가
 		}
+		D d = new D(); // 현 시점(메소드 호출되면)에서 생성 메소드 실행이 종료되면 제거됨
+		d.field1 = 3;
+		d.method1();
 	} // 여기서 Class가 사라짐
 }

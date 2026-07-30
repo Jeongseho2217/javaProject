@@ -18,7 +18,7 @@ public class A {
 	//정적 메소드 내부에서 멤버 클래스 참조 변수 선언 및 초기화
 	static void method2() {
 		// B var1 = new B(); // no enclosing instance of type A is accessible 오류
-		C var2 = new C(); // 클래스 이름으로 접근 가능ㄴ
+		C var2 = new C(); // 클래스 이름으로 접근 가능
 	}
 	
 	//인스턴스 멤버 클래스
