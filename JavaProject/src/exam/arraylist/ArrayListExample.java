@@ -30,5 +30,6 @@ public class ArrayListExample {
 		System.out.println();
 		System.out.println("가장 긴 단어는 : " + maxWord);
 		System.out.println("가장 긴 단어의 길이는 : " + maxWordLen);
+		sc.close();
 	}
 }
