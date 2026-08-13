@@ -1,4 +1,4 @@
-package stack;
+package exam;
 
 // 배열을 활용한 스택 구현
 // Char형 데이터를 저장하는 스택
@@ -26,7 +26,10 @@ public class Stack {
 	
 	// 삽입시 오버플로우 체크
 	public void push(char item) {
-		if(isFull()) System.out.println("스택 오버플로우");
+		if(isFull()) {
+			System.out.println("스택 오버플로우");
+			return;
+		}
 		else stackArr[++top] = item;
 	}
 	
@@ -60,11 +63,11 @@ public class Stack {
 			System.out.println("데이터가 없음");
 		}
 		else {
-			System.out.print("스택 데이터 : ");
+			System.out.print("주차된 차량 : ");
 			for(int i = 0; i<=top; i++) {
 				System.out.print("[" + i + "] : " + stackArr[i] + " ");
 			}
-			System.out.print("\ntop : " + top);
+			System.out.println();
 		}
 	}
 	
