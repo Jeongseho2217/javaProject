@@ -1,4 +1,4 @@
-package datastructure.tree.binarysearch;
+package totalexam;
 
 import java.util.Comparator;
 
@@ -201,7 +201,7 @@ public class BinarySearchTree<E> {
 		
 		if(current.left == null) { // 현재 노드의 왼쪽 자식노드가 없으면 현재 노드가 가장 작은 값의 노드
 			// 가장 작은값의 노드의 오른쪽 자식노드를 부모 노드의 오른쪽 자식으로 연결
-			current.right = current.right;
+			currentParent.right = current.right;
 			current.right = null;
 			return current;
 		}
@@ -301,5 +301,8 @@ public class BinarySearchTree<E> {
 			postorder(o.right);
 			System.out.print(o.value + " "); // root
 		}
+	}
+	public Node<E> getRoot() { // 루트 반환
+		return this.root;
 	}
 }
