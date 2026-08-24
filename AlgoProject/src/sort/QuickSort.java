@@ -25,7 +25,18 @@ public class QuickSort {
 
 	// 두개의 리스트로 분할 후 피벗을 반환
 	int pivot = partition(a, lo, hi);
+	System.out.println("왼쪽 부분 리스트");
+	for(int k=lo; k<pivot; k++) {
+		System.out.print(a[k] + " ");
+	}
+	System.out.println();
 	l_pivot_sort(a, lo, pivot-1);
+	
+	System.out.println("오른쪽 부분 리스트");
+	for(int k=pivot+1; k<=hi; k++) {
+		System.out.print(a[k] + " ");
+	}
+	System.out.println();
 	l_pivot_sort(a, pivot+1, hi);
 	
 	}
@@ -54,7 +65,13 @@ public class QuickSort {
 		}
 				
 		// 피벗으로 설정했던 위치(a[left])의 원소와 lo가리키는 원소를 교환하고 lo지점을 pivot위치로 결정
-		swap(a, left, right);
+		swap(a, left, lo);
+		
+		System.out.println("pivot : " + a[lo]);
+		for(int k : a) {
+			System.out.print(k + " ");
+		}
+		System.out.println();
 		
 		return lo;
 	}
