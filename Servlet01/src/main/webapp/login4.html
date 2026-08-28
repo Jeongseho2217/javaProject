@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>로긴 창</title>
+<script>
+	/* 자바 스크립트로 서블릿에 요청 -DOM 객체 사용 */
+	/* 현재 파일에 대한 해석을 브라우저가 마무리하고 브라우저창에 표현이 종료되면 onload 이벤트 발생 대입 함수 호출*/
+	window.onload = function() {
+		let frmLogin = document.getElementById('frmlogin');
+		
+		frmlogin.addEventListener('submit', ()=>{
+			// 폼 내부에 있는 input 객체 value 추출해서 검증 진행 후 문제 없으면 submit 진행
+			let id = document.getElementById('id');
+			let pw = document.getElementById('pw');
+			
+			if(id.value=="" || pw.value=="") {
+				alert("아이디 비번은 필수입니다.");
+				event.preventDefault(); // 브라우저에 의해 발생하는 submit 중지
+				return false; // 이벤트 발생 전으로 복귀
+			}else{
+				frmLogin.method = "post";
+				frmLogin.action = "login4";
+				frmLogin.submit(); // 서블릿 요청 메소드
+			}
+		}); // 써밋 끝
+	} // onload 끝
+</script>
+</head>
+<body>
+	<h3>JavaScipt 활용 submit</h3>
+	<p>
+		<form id="frmlogin" name= "frnlogin">
+			아이디 : <input type="text" name="user_id" id="id"><br>
+			비밀번호 : <input type="password" name="user_pw" id="pw"><br>
+			<input type="submit" value="로그인"><input type="reset" value="다시 입력">
+		</form>
+	</p>
+</body>
+</html>

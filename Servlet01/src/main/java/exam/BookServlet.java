@@ -9,14 +9,20 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 /**
- * Servlet implementation class bookServlet
+ * 클라이언트가 form 태그 통해 전송한 데이터(파라미터)를 추출해서 처리
  */
 @WebServlet("/bookInsert")
-public class bookServlet extends HttpServlet {
+public class BookServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 	
+	public void init() throws ServletException {
+		System.out.print("객체 생성:");
+	}
+	
 	/**
-	 * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse response)
+	 * form 메소드 포스트 요청 처리
+	 * 1개의 파라미터 value를 추출할 때 사용 : getParameter (input type text password, radio 1개 값 전송/checkbox같은 여러개 가능할땐 첫 값 하나만 반환)
+	 * 동일 파라미터명으로 여러개의 파라미터가 전송되면 getParameter는 처음 보이는 파라미터 값만 반환
 	 */
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		request.setCharacterEncoding("utf-8");

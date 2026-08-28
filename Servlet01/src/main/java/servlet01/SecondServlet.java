@@ -23,21 +23,21 @@ public class SecondServlet extends HttpServlet {
     }
 
 	/**
-	 * @see Servlet#init(ServletConfig)
+	 * 객체 생성 시 한번 호출
 	 */
 	public void init(ServletConfig config) throws ServletException {
 		System.out.println("두번째 서블릿 init");
 	}
 
 	/**
-	 * @see Servlet#destroy()
+	 * 코드 업데이트 또는 서버 종료시 한번 호출
 	 */
 	public void destroy() {
 		System.out.println("두번째 서블릿 destroy");
 	}
 
 	/**
-	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
+	 * 클라이언트 get 요청이 올때마다 호출
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		System.out.println("두번째 서블릿 doGet");
