@@ -24,7 +24,7 @@ public class ServletRefreshSecond extends HttpServlet {
 		PrintWriter out = response.getWriter();
 		
 		out.println("<html><body>");
-		out.println("sendRedirect를 이용한 포워딩");
+		out.println("Refresh를 이용한 포워딩");
 		out.println("</html></body>");
 		
 	}
