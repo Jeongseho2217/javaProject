@@ -13,7 +13,6 @@
 	<jsp:useBean id="member" class="exam.beans.MemberBean" scope="page">
 		<jsp:setProperty property="*" name="member"/>
 	</jsp:useBean>
-	
 		<h3>빈 속성값 출력</h3><br>
 		아이디 : <%= member.getUid() %><br>
 		비밀번호 : <%= member.getPw() %><br>
