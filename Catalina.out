@@ -1,0 +1,99 @@
+9월 07, 2026 2:17:56 오후 org.apache.catalina.startup.VersionLoggerListener log
+정보: 서버 버전 이름:    Apache Tomcat/9.0.121
+9월 07, 2026 2:17:56 오후 org.apache.catalina.startup.VersionLoggerListener log
+정보: Server 빌드 시각:  Aug 12 2026 19:38:16 UTC
+9월 07, 2026 2:17:56 오후 org.apache.catalina.startup.VersionLoggerListener log
+정보: Server 버전 번호:  9.0.121.0
+9월 07, 2026 2:17:56 오후 org.apache.catalina.startup.VersionLoggerListener log
+정보: 운영체제 이름:     Windows 11
+9월 07, 2026 2:17:56 오후 org.apache.catalina.startup.VersionLoggerListener log
+정보: 운영체제 버전:     10.0
+9월 07, 2026 2:17:56 오후 org.apache.catalina.startup.VersionLoggerListener log
+정보: 아키텍처:          amd64
+9월 07, 2026 2:17:56 오후 org.apache.catalina.startup.VersionLoggerListener log
+정보: 자바 홈:           C:\Program Files\Eclipse Adoptium\jdk-21.0.11.10-hotspot
+9월 07, 2026 2:17:56 오후 org.apache.catalina.startup.VersionLoggerListener log
+정보: JVM 버전:          21.0.11+10-LTS
+9월 07, 2026 2:17:56 오후 org.apache.catalina.startup.VersionLoggerListener log
+정보: JVM 벤더:          Eclipse Adoptium
+9월 07, 2026 2:17:56 오후 org.apache.catalina.startup.VersionLoggerListener log
+정보: CATALINA_BASE:     C:\Users\User\eclipse-workspace\JavaWorkspace\.metadata\.plugins\org.eclipse.wst.server.core\tmp0
+9월 07, 2026 2:17:56 오후 org.apache.catalina.startup.VersionLoggerListener log
+정보: CATALINA_HOME:     C:\apache-tomcat-9.0.121-windows-x64\apache-tomcat-9.0.121
+9월 07, 2026 2:17:56 오후 org.apache.catalina.startup.VersionLoggerListener log
+정보: 명령 행 아규먼트:  -Dcatalina.base=C:\Users\User\eclipse-workspace\JavaWorkspace\.metadata\.plugins\org.eclipse.wst.server.core\tmp0
+9월 07, 2026 2:17:56 오후 org.apache.catalina.startup.VersionLoggerListener log
+정보: 명령 행 아규먼트:  -Dcatalina.home=C:\apache-tomcat-9.0.121-windows-x64\apache-tomcat-9.0.121
+9월 07, 2026 2:17:56 오후 org.apache.catalina.startup.VersionLoggerListener log
+정보: 명령 행 아규먼트:  -Dwtp.deploy=C:\Users\User\eclipse-workspace\JavaWorkspace\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps
+9월 07, 2026 2:17:56 오후 org.apache.catalina.startup.VersionLoggerListener log
+정보: 명령 행 아규먼트:  -Djava.library.path=C:\apache-tomcat-9.0.121-windows-x64\apache-tomcat-9.0.121\bin
+9월 07, 2026 2:17:56 오후 org.apache.catalina.startup.VersionLoggerListener log
+정보: 명령 행 아규먼트:  --add-opens=java.base/java.lang=ALL-UNNAMED
+9월 07, 2026 2:17:56 오후 org.apache.catalina.startup.VersionLoggerListener log
+정보: 명령 행 아규먼트:  --add-opens=java.base/java.io=ALL-UNNAMED
+9월 07, 2026 2:17:56 오후 org.apache.catalina.startup.VersionLoggerListener log
+정보: 명령 행 아규먼트:  --add-opens=java.base/java.util=ALL-UNNAMED
+9월 07, 2026 2:17:56 오후 org.apache.catalina.startup.VersionLoggerListener log
+정보: 명령 행 아규먼트:  --add-opens=java.base/java.util.concurrent=ALL-UNNAMED
+9월 07, 2026 2:17:56 오후 org.apache.catalina.startup.VersionLoggerListener log
+정보: 명령 행 아규먼트:  --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+9월 07, 2026 2:17:56 오후 org.apache.catalina.startup.VersionLoggerListener log
+정보: 명령 행 아규먼트:  -Dfile.encoding=UTF-8
+9월 07, 2026 2:17:56 오후 org.apache.catalina.startup.VersionLoggerListener log
+정보: 명령 행 아규먼트:  -Dstdout.encoding=UTF-8
+9월 07, 2026 2:17:56 오후 org.apache.catalina.startup.VersionLoggerListener log
+정보: 명령 행 아규먼트:  -Dstderr.encoding=UTF-8
+9월 07, 2026 2:17:56 오후 org.apache.catalina.startup.VersionLoggerListener log
+정보: 명령 행 아규먼트:  -XX:+ShowCodeDetailsInExceptionMessages
+9월 07, 2026 2:17:56 오후 org.apache.catalina.core.AprLifecycleListener lifecycleEvent
+정보: APR 버전 [1.7.6]을(를) 사용한, APR 기반 Apache Tomcat Native 라이브러리 [1.3.8]을(를) 로드했습니다.
+9월 07, 2026 2:17:56 오후 org.apache.catalina.core.AprLifecycleListener lifecycleEvent
+정보: APR 용량정보들: IPv6 [true], sendfile [true], accept filters [false], random [true], UDS [true].
+9월 07, 2026 2:17:56 오후 org.apache.catalina.core.AprLifecycleListener lifecycleEvent
+정보: APR/OpenSSL 설정: useAprConnector [false], useOpenSSL [true]
+9월 07, 2026 2:17:56 오후 org.apache.catalina.core.AprLifecycleListener initializeSSL
+정보: OpenSSL이 성공적으로 초기화되었습니다: [OpenSSL 3.0.21 9 Jun 2026]
+9월 07, 2026 2:17:56 오후 org.apache.coyote.AbstractProtocol init
+정보: 프로토콜 핸들러 ["http-nio-8080"]을(를) 초기화합니다.
+9월 07, 2026 2:17:56 오후 org.apache.catalina.startup.Catalina load
+정보: [629] 밀리초 내에 서버가 초기화되었습니다.
+9월 07, 2026 2:17:56 오후 org.apache.catalina.core.StandardService startInternal
+정보: 서비스 [Catalina]을(를) 시작합니다.
+9월 07, 2026 2:17:56 오후 org.apache.catalina.core.StandardEngine startInternal
+정보: 서버 엔진을 시작합니다: [Apache Tomcat/9.0.121]
+9월 07, 2026 2:17:58 오후 org.apache.jasper.servlet.TldScanner scanJars
+정보: 적어도 하나의 JAR가 TLD들을 찾기 위해 스캔되었으나 아무 것도 찾지 못했습니다. 스캔했으나 TLD가 없는 JAR들의 전체 목록을 보시려면, 로그 레벨을 디버그 레벨로 설정하십시오. 스캔 과정에서 불필요한 JAR들을 건너뛰면, 시스템 시작 시간과 JSP 컴파일 시간을 단축시킬 수 있습니다.
+9월 07, 2026 2:18:00 오후 org.apache.jasper.servlet.TldScanner scanJars
+정보: 적어도 하나의 JAR가 TLD들을 찾기 위해 스캔되었으나 아무 것도 찾지 못했습니다. 스캔했으나 TLD가 없는 JAR들의 전체 목록을 보시려면, 로그 레벨을 디버그 레벨로 설정하십시오. 스캔 과정에서 불필요한 JAR들을 건너뛰면, 시스템 시작 시간과 JSP 컴파일 시간을 단축시킬 수 있습니다.
+9월 07, 2026 2:18:00 오후 org.apache.coyote.AbstractProtocol start
+정보: 프로토콜 핸들러 ["http-nio-8080"]을(를) 시작합니다.
+9월 07, 2026 2:18:00 오후 org.apache.catalina.startup.Catalina start
+정보: 서버가 [3895] 밀리초 내에 시작되었습니다.
+9월 07, 2026 2:18:01 오후 org.apache.catalina.core.ApplicationContext log
+정보: null
+lee
+kim
+kim
+leeid
+이길동
+9월 07, 2026 2:18:20 오후 org.apache.coyote.http11.Http11Processor service
+정보: HTTP 요청 헤더를 파싱하는 중 오류 발생
+ 비고: HTTP 요청 파싱 오류들이 더 발생하는 경우 DEBUG 레벨 로그로 기록될 것입니다.
+java.lang.IllegalArgumentException: 메소드 이름에 유효하지 않은 문자가 발견되었습니다. HTTP 메소드 이름은 유효한 토큰이어야 합니다.
+	at org.apache.coyote.http11.Http11InputBuffer.parseRequestLine(Http11InputBuffer.java:410)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:280)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:71)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:1344)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:2254)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:74)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:976)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:494)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:80)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+
+9월 07, 2026 2:18:20 오후 org.apache.coyote.http11.Http11Processor service
+정보: HTTP 요청 헤더를 파싱하는 중 오류 발생
+ 비고: HTTP 요청 파싱 오류들이 더 발생하는 경우 DEBUG 레벨 로그로 기록될 것입니다.
+java.lang.IllegalArgumentException: 메소드 이름에 유효하지 않은 문자가 발견되었습니다. HTTP 메소드 이름은 유효한 토큰이어야 합니다.
+	at org.apache.coyote
