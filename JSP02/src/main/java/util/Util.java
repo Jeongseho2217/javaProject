@@ -6,8 +6,9 @@ import java.sql.DriverManager;
 public class Util {
 	private static Connection getConnection() {
 		Connection con = null;
-		try {
+		try { // 필요하다고 요청되면 그때 dbms와의 연결을 진행하고 객체를 반환
 			Class.forName("oracle.jdbc.driver.OracleDriver");
+			//"oracle 접속 종류 :@dbms주소(도메인,ip)포트
 			String url = "jdbc:oracle:thin:@localhost:29889/xepdb1";
 			String user = "sql_select";
 			String pwd = "1234";

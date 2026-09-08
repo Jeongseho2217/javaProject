@@ -7,7 +7,23 @@ import java.util.ArrayList;
 
 import util.Util;
 
+import javax.sql.DataSource;
+import javax.naming.Context;
+import javax.naming.InitialContext;
+
 public class MemberDAO {
+	// DAO 객체가 생성될 때 connection 객체를 factory(connection pool)에서 할당받도록 생성자 구성
+	private DataSource dataFactory;
+	
+	public MemberDAO() {
+		try {
+			Context ctx = new InitialContext();
+			Context env = (Context)ctx.lookup("java:/comp/env");
+			this.dataFactory = (DataSource)env.lookup("jdbc/oracle");
+		} catch(Exception e) {
+			e.printStackTrace();
+		}
+	}
 	
 	public ArrayList<MemberDTO> memberSelect() {
 		Connection con = null;
@@ -17,7 +33,9 @@ public class MemberDAO {
 		ArrayList<MemberDTO> memList = new ArrayList<MemberDTO>();
 		
 		try {
-			con = Util.getConn();
+			//con = Util.getConn(); // 사용할때 직접 연결
+			System.out.println("checkc");
+			dataFactory.getConnection(); // connection pool에서 미리 준비한 connection 객체 얻어옴
 			String query = "select * from member";
 			pstmt = con.prepareStatement(query);
 			rs = pstmt.executeQuery();
