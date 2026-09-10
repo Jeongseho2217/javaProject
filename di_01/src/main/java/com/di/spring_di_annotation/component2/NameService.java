@@ -1,5 +1,6 @@
 package com.di.spring_di_annotation.component2;
 
+import org.springframework.stereotype.Component;
 
 @Component
 public class NameService implements INameInterface {

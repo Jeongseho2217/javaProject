@@ -1,0 +1,16 @@
+package com.di.spring_di_annotation_ex3;
+
+import org.springframework.stereotype.Component;
+
+@Component("speaker")
+public class Speaker {
+	
+	public void VolumeUp() {
+		System.out.println("볼륨을 키웁니다.");
+	}
+	
+	public void VolumeDown() {
+		System.out.println("볼륨을 낮춥니다.");
+	}
+	
+}
