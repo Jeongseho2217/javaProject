@@ -1,0 +1,31 @@
+package com.spring_mvc_projectData;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.servlet.ModelAndView;
+
+@Controller
+public class BookController {
+	
+	// http://localhost:8080/projectData/
+	@RequestMapping("/")
+	public String index() {
+		return "index";
+	}
+	
+	@RequestMapping("/BookInfoView1")
+	public String showBookInfo1(Model model) {
+		model.addAttribute("title", "스프링 프레임워크");
+		model.addAttribute("price", 20000);
+		return "book/bookInfoView";
+	}
+	
+	@RequestMapping("/BookInfoView2")
+	public ModelAndView showBookInfo2(ModelAndView mView) {
+		mView.addObject("title", "스프링 프레임워크2");
+		mView.addObject("price", 25000);
+		mView.setViewName("BookInfoView");
+		return mView;
+	}
+}
