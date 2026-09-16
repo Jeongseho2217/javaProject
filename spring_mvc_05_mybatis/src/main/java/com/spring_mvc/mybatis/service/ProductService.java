@@ -1,6 +1,7 @@
 package com.spring_mvc.mybatis.service;
 
 import java.util.ArrayList;
+import java.util.HashMap;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
@@ -16,6 +17,20 @@ public class ProductService implements IProductService{
 	@Qualifier("IProductDAO")
 	IProductDAO dao;
 	
+	@Override
+	public ArrayList<ProductDTO> productSearch(HashMap<String, Object> map) {
+		
+		return dao.productSearch(map);
+	}
+	
+	@Override
+	public String prdNoCheck(String prdNo) {
+		String res = dao.prdNoCheck(prdNo);
+		String result = "available";
+		if(res != null) return result;
+		return res;
+	}
+
 	@Override
 	public void insertProduct(ProductDTO prdDto) {
 		dao.insertProduct(prdDto);
@@ -44,5 +59,4 @@ public class ProductService implements IProductService{
 		// TODO Auto-generated method stub
 		return null;
 	}
-	
 }

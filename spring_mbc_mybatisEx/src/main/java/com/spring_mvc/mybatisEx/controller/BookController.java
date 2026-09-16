@@ -7,6 +7,8 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.ResponseBody;
 
 import com.spring_mvc.mybatisEx.service.BookService;
 import com.spring_mvc.mybatisEx.vo.BookVO;
@@ -64,6 +66,13 @@ public class BookController {
 	public String deleteBook(@PathVariable String bookNo) {
 		service.deleteBook(bookNo);
 		return "redirect:/book/listAllBook";
+	}
+	
+	@ResponseBody
+	@RequestMapping("/book/bookNoCheck")
+	public String prdNoCheck(@RequestParam("bookNo") String bookNo) {
+		String result = service.bookNoCheck(bookNo); //상품번호 중복 체크 service에서 진행 결과만 반환
+		return result;
 	}
 	
 }

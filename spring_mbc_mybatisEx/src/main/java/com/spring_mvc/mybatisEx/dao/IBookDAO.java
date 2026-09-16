@@ -9,4 +9,5 @@ public interface IBookDAO {
 	void deleteBook(String prdNo); // 도서 정보 삭제
 	ArrayList<BookVO> listAllBook(); // 전체 도서 정보 조회
 	BookVO detailViewBook(String prdNo); // 상세 도서 정보 조회
+	String bookNoCheck(String bookNo); // 중복 체크
 }

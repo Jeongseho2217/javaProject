@@ -18,10 +18,10 @@ $(document).ready(function(){
 				else message="로그인 실패";
 				alert(message);
 			},
-			error.function() {
+			error:function() {
 			
 			},
-			complete.function() {
+			complete:function() {
 			
 			}
 			}); //ajax 끝

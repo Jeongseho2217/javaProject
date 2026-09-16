@@ -8,6 +8,7 @@ package com.spring_mvc.mybatis.service;
 
 
 import java.util.ArrayList;
+import java.util.HashMap;
 
 import com.spring_mvc.mybatis.dto.ProductDTO;
 
@@ -18,4 +19,6 @@ public interface IProductService {
 	void deleteProduct(String prdNo);
 	ArrayList<ProductDTO> listAllProduct();
 	ProductDTO detailViewProduct(String prdNo);
+	String prdNoCheck(String prdNo);
+	ArrayList<ProductDTO> productSearch(HashMap<String, Object> map);
 }
