@@ -36,4 +36,20 @@ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
 	<delete id="deleteBook" parameterType="String">
 		DELETE FROM book WHERE bookNo=#{bookNo}
 	</delete>
+	
+	<select id="bookNoCheck" resultType="string" parameterType="string">
+		SELECT bookNo FROM BOOK WHERE bookNo=#{bookNo}
+	</select>
+	
+	<select id="bookSearch" parameterType="hashmap" resultMap="bookResult">
+		SELECT * FROM BOOK WHERE
+			<choose>
+				<when test="type != null and type.equals('bookName')">
+					bookName LIKE '%' || #{keyword} || '%'
+				</when>
+				<when test="type != null and type.equals('bookAuthor')">
+					bookAuthor LIKE '%' || #{keyword} || '%'
+				</when>
+			</choose>
+	</select>
 </mapper>

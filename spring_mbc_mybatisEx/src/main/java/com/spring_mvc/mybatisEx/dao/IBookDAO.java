@@ -1,6 +1,8 @@
 package com.spring_mvc.mybatisEx.dao;
 
 import java.util.ArrayList;
+import java.util.HashMap;
+
 import com.spring_mvc.mybatisEx.vo.BookVO;
 
 public interface IBookDAO {
@@ -10,4 +12,5 @@ public interface IBookDAO {
 	ArrayList<BookVO> listAllBook(); // 전체 도서 정보 조회
 	BookVO detailViewBook(String prdNo); // 상세 도서 정보 조회
 	String bookNoCheck(String bookNo); // 중복 체크
+	ArrayList<BookVO> bookSearch(HashMap<String, Object> map); // 도서 검색
 }

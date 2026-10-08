@@ -14,6 +14,7 @@
 	<a href="<c:url value='/product/listAllProduct'/>">전체 상품 조회</a><br>
 	<a href="<c:url value='/product/newProductForm'/>">상품 등록</a>
 	<a href="<c:url value='/product/productSearchForm1'/>">상품 검색1</a>
+	<a href="<c:url value='/product/productSearchForm2'/>">상품 검색2</a>
 	
 	<h4></h4>
 	<a href="<c:url value='/loginForm'/>">로그인</a>
